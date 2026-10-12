@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students SYSTEM "students.dtd">
+
+<students>
+
+    <student>
+        <name>Arun</name>
+        <age>20</age>
+        <course>B.Tech IT</course>
+        <grade>A</grade>
+        <address>Madurai</address>
+        <phone>9876543210</phone>
+    </student>
+
+    <student>
+        <name>Priya</name>
+        <age>21</age>
+        <course>B.Tech CSE</course>
+        <grade>A+</grade>
+        <address>Chennai</address>
+    </student>
+
+    <student>
+        <name>Kumar</name>
+        <age>20</age>
+        <course>B.Tech ECE</course>
+        <grade>B+</grade>
+        <phone>9876543211</phone>
+    </student>
+
+</students>

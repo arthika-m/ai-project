@@ -1,0 +1,17 @@
+<!ELEMENT recipes (recipe+)>
+
+<!ELEMENT recipe (title, ingredients, instructions)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT ingredients (ingredient+)>
+
+<!ELEMENT ingredient (#PCDATA)>
+<!ATTLIST ingredient
+    quantity CDATA #IMPLIED
+    unit CDATA #IMPLIED
+>
+
+<!ELEMENT instructions (instruction+)>
+
+<!ELEMENT instruction (#PCDATA)>

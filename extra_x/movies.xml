@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE movies [
+    <!ELEMENT movies (movie+)>
+    <!ELEMENT movie (title, director, genre, releaseYear)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT releaseYear (#PCDATA)>
+]>
+
+<movies>
+
+    <movie>
+        <title>Inception</title>
+        <director>Christopher Nolan</director>
+        <genre>Science Fiction</genre>
+        <releaseYear>2010</releaseYear>
+    </movie>
+
+    <movie>
+        <title>Interstellar</title>
+        <director>Christopher Nolan</director>
+        <genre>Science Fiction</genre>
+        <releaseYear>2014</releaseYear>
+    </movie>
+
+    <movie>
+        <title>3 Idiots</title>
+        <director>Rajkumar Hirani</director>
+        <genre>Comedy Drama</genre>
+        <releaseYear>2009</releaseYear>
+    </movie>
+
+</movies>

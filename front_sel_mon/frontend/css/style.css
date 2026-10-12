@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.container,
+.card {
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+input,
+select,
+textarea {
+    margin: 5px;
+    padding: 8px;
+}
+
+button,
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}

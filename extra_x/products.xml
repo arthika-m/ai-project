@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE products SYSTEM "products.dtd">
+
+<products>
+
+    <product id="P101">
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <price>55000</price>
+        <description>High performance laptop</description>
+        <stockQuantity>10</stockQuantity>
+    </product>
+
+    <product id="P102">
+        <name>Keyboard</name>
+        <category>Accessories</category>
+        <price>1200</price>
+        <stockQuantity>25</stockQuantity>
+    </product>
+
+    <product id="P103">
+        <name>Notebook</name>
+        <category>Stationery</category>
+        <price>80</price>
+        <description>College ruled notebook</description>
+    </product>
+
+</products>

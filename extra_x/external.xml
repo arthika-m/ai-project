@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students SYSTEM "external.dtd">
+
+<students>
+
+    <student>
+        <name>Arun</name>
+        <age>20</age>
+        <course>B.Tech IT</course>
+    </student>
+
+    <student>
+        <name>Priya</name>
+        <age>21</age>
+        <course>B.Tech CSE</course>
+    </student>
+
+</students>

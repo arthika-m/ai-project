@@ -1,0 +1,44 @@
+File → Open Folder → WebTerminalMaster
+Step 2: Terminal open pannunga.
+Terminal → New Terminal
+Step 3: Dependencies install pannala na mattum:
+npm install
+
+
+Step 4: Web application start pannunga.
+node server.js
+
+
+Terminal-la:
+Server running on http://localhost:5000
+MongoDB connected
+
+
+nu varanum.
+Step 5: Chrome browser open panni indha URL enter pannunga:
+http://localhost:5000
+Login page open aagum. Ippo registration, login, dashboard ellam browser-la use pannalaam.
+Important: Server run aagura terminal-ai close pannidaadheenga.
+
+
+
+-----------
+Case 2: Web application + Selenium testing run pannanum
+Indha case-la two terminals use pannanum.
+
+Terminal 1 — Start web server
+node server.js
+
+
+Idhu running-la irukkanum.
+
+
+
+
+Terminal 2 — Run Selenium
+Pudhu terminal open pannunga. Project folder-la irundhu:
+python selenium/test_login.py
+
+
+python work aagala na:
+py selenium/test_login.py

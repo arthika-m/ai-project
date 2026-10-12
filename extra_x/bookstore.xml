@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+<bookstore>
+
+    <book>
+        <title>Wings of Fire</title>
+        <author>A.P.J. Abdul Kalam</author>
+        <year>1999</year>
+        <price>350</price>
+    </book>
+
+    <book>
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <year>1988</year>
+    </book>
+
+    <book>
+        <title>Harry Potter</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <price>500</price>
+    </book>
+
+</bookstore>

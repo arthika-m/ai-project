@@ -1,0 +1,25 @@
+
+students {
+    display: block;
+    font-family: Arial;
+}
+
+student {
+    display: block;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+name {
+    display: block;
+    font-weight: bold;
+}
+
+department {
+    display: block;
+}
+
+mark {
+    display: block;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE recipes SYSTEM "recipes.dtd">
+
+<recipes>
+
+    <recipe>
+        <title>Vegetable Pasta</title>
+
+        <ingredients>
+            <ingredient quantity="200" unit="grams">Pasta</ingredient>
+            <ingredient quantity="1" unit="cup">Vegetables</ingredient>
+            <ingredient quantity="2" unit="tablespoons">Oil</ingredient>
+        </ingredients>
+
+        <instructions>
+            <instruction>Boil the pasta.</instruction>
+            <instruction>Cook the vegetables in oil.</instruction>
+            <instruction>Mix the pasta and vegetables.</instruction>
+        </instructions>
+    </recipe>
+
+    <recipe>
+        <title>Fruit Salad</title>
+
+        <ingredients>
+            <ingredient quantity="1" unit="piece">Apple</ingredient>
+            <ingredient quantity="1" unit="piece">Banana</ingredient>
+        </ingredients>
+
+        <instructions>
+            <instruction>Cut the fruits into small pieces.</instruction>
+            <instruction>Mix all the fruits together.</instruction>
+        </instructions>
+    </recipe>
+
+</recipes>

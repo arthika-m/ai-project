@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE employees SYSTEM "employees.dtd">
+
+<employees>
+
+    <employee>
+        <name>Arun Kumar</name>
+        <id>E101</id>
+        <department>IT</department>
+        <address>Madurai</address>
+    </employee>
+
+    <employee>
+        <name>Priya</name>
+        <id>E102</id>
+        <department>CSE</department>
+    </employee>
+
+    <employee>
+        <name>Kumar</name>
+        <id>E103</id>
+        <department>ECE</department>
+        <address>Chennai</address>
+    </employee>
+
+</employees>
