@@ -1,259 +1,160 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <title>Register</title>
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-
 <div class="container">
-
     <h1>Student Management System</h1>
-
     <h2>Register</h2>
-
-
     <form onsubmit="registerUser(event)">
-
-
         <fieldset>
-
             <legend>Name</legend>
-
             First Name:
-
             <input
                 type="text"
                 id="firstname"
                 required
             >
-
             Last Name:
-
             <input
                 type="text"
                 id="lastname"
                 required
             >
-
         </fieldset>
-
-
         <fieldset>
-
             <legend>Gender</legend>
-
             <input
                 type="radio"
                 name="gender"
                 value="Male"
             >
-
             Male
-
             <input
                 type="radio"
                 name="gender"
                 value="Female"
             >
-
             Female
-
         </fieldset>
-
-
         <fieldset>
-
             <legend>Hobbies</legend>
-
             <input
                 type="checkbox"
                 name="hobbies"
                 value="Sports"
             >
-
             Sports
-
             <input
                 type="checkbox"
                 name="hobbies"
                 value="Music"
             >
-
             Music
-
             <input
                 type="checkbox"
                 name="hobbies"
                 value="Reading"
             >
-
             Reading
-
         </fieldset>
-
-
         <fieldset>
-
             <legend>Contact Details</legend>
-
             Email:
-
             <input
                 type="email"
                 id="email"
                 required
             >
-
             Phone:
-
             <input
                 type="text"
                 id="phone"
             >
-
             Password:
-
             <input
                 type="password"
                 id="password"
                 required
             >
-
         </fieldset>
-
-
         <fieldset>
-
             <legend>City</legend>
-
             <select id="city">
-
                 <option>Chennai</option>
-
                 <option>Madurai</option>
-
                 <option>Coimbatore</option>
-
             </select>
-
         </fieldset>
-
-
         Address:
-
         <textarea
             id="address"
             rows="3"
         ></textarea>
-
-
         <br><br>
-
-
         <input
             type="submit"
             value="Register"
         >
-
         <input
             type="reset"
             value="Reset"
         >
-
     </form>
-
-
     <p>
-
         Already have an account?
-
         <a href="index.html">
             Login
         </a>
-
     </p>
-
 </div>
-
-
 <script>
-
 function registerUser(event) {
-
     event.preventDefault();
-
-
     const hobbies = [];
-
     document
         .querySelectorAll('input[name="hobbies"]:checked')
         .forEach(function(item) {
-
             hobbies.push(item.value);
 
         });
-
-
     const genderElement =
         document.querySelector('input[name="gender"]:checked');
-
-
     const user = {
-
         firstname:
             document.getElementById("firstname").value,
-
         lastname:
             document.getElementById("lastname").value,
-
         gender:
             genderElement ? genderElement.value : "",
-
         hobbies:
             hobbies,
-
         email:
             document.getElementById("email").value,
-
         phone:
             document.getElementById("phone").value,
-
         city:
             document.getElementById("city").value,
-
         address:
             document.getElementById("address").value,
-
         password:
             document.getElementById("password").value
-
     };
-
-
     fetch("/register", {
-
         method: "POST",
-
         headers: {
             "Content-Type": "application/json"
         },
-
         body: JSON.stringify(user)
 
     })
-
     .then(function(response) {
 
         return response.json();
 
     })
-
     .then(function(data) {
 
         alert(data.message);
@@ -261,11 +162,7 @@ function registerUser(event) {
         window.location.href = "index.html";
 
     });
-
 }
-
 </script>
-
 </body>
-
 </html>

@@ -2,199 +2,129 @@
 <html
     ng-app="studentApp"
 >
-
 <head>
-
     <title>Student Dashboard</title>
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body ng-controller="StudentController">
-
 <div class="dashboard">
-
     <h1>Student Management System</h1>
-
-
     <div class="card">
-
         <h2>Welcome</h2>
-
         <input
             type="text"
             ng-model="username"
             placeholder="Enter your name"
         >
-
         <h3>Welcome, {{username}}</h3>
-
     </div>
-
-
     <div class="card">
-
         <h2>Student</h2>
-
         <input
             type="text"
             ng-model="student.name"
             placeholder="Name"
         >
-
         <input
             type="text"
             ng-model="student.department"
             placeholder="Department"
         >
-
         <input
             type="text"
             ng-model="student.year"
             placeholder="Year"
         >
-
-
         <button
             ng-if="!editing"
             ng-click="addStudent()"
         >
             Add
         </button>
-
-
         <button
             ng-if="editing"
             ng-click="updateStudent()"
         >
             Update
         </button>
-
-
         <button
             ng-if="editing"
             ng-click="cancelEdit()"
         >
             Cancel
         </button>
-
     </div>
-
-
     <div class="card">
-
         <h2>Students</h2>
-
         <input
             type="text"
             ng-model="search"
             placeholder="Search"
         >
-
-
         <table>
-
             <tr>
-
                 <th>No</th>
                 <th>Name</th>
                 <th>Department</th>
                 <th>Year</th>
                 <th>Action</th>
-
             </tr>
-
-
             <tr
                 ng-repeat="
                     student in students | filter:search
                 "
             >
-
                 <td>
                     {{$index + 1}}
                 </td>
-
                 <td>
                     {{student.name}}
                 </td>
-
                 <td>
                     {{student.department}}
                 </td>
-
                 <td>
                     {{student.year}}
                 </td>
-
                 <td>
-
                     <button
                         class="edit-button"
                         ng-click="editStudent(student)"
                     >
                         Edit
                     </button>
-
                     <button
                         class="delete-button"
                         ng-click="deleteStudent(student._id)"
                     >
                         Delete
                     </button>
-
                 </td>
-
             </tr>
-
         </table>
-
     </div>
-
-
     <div class="card">
-
         <h2>Audio</h2>
-
         <audio controls>
-
             <source
                 src="audio/notification.mp3"
                 type="audio/mpeg"
             >
-
         </audio>
-
     </div>
-
-
     <div class="card">
-
         <h2>Video</h2>
-
         <video width="500" controls>
-
             <source
                 src="videos/promo.mp4"
                 type="video/mp4"
             >
-
         </video>
-
     </div>
-
 </div>
-
-
 <script src="js/angular.min.js"></script>
-
 <script src="js/app.js"></script>
-
 <script src="js/service.js"></script>
-
 <script src="js/controller.js"></script>
-
 </body>
-
 </html>
