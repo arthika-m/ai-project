@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: lightblue;
     text-align: center;
 }
@@ -10,6 +11,7 @@ body {
     width: 70%;
     margin: 20px auto;
     padding: 20px;
+    border-radius: 8px;
 }
 
 input,
@@ -24,13 +26,46 @@ input[type="submit"] {
     background-color: blue;
     color: white;
     padding: 8px 15px;
+    border: none;
+    cursor: pointer;
 }
 
 table {
     margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 th {
     background-color: blue;
     color: white;
+}
+
+/* ngAnimate */
+.ng-enter {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.ng-enter-active {
+    opacity: 1;
+}
+
+.ng-leave {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.ng-leave-active {
+    opacity: 0;
+}
+
+/* Custom welcome message */
+.welcome {
+    color: darkblue;
 }
