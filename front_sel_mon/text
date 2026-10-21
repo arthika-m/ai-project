@@ -42,3 +42,40 @@ python selenium/test_login.py
 
 python work aagala na:
 py selenium/test_login.py
+
+--------
+
+First, check Python
+VS Code terminal-la project folder open pannitu:
+python --version
+
+
+Idhu work aagala na:
+py --version
+
+
+2. Install Selenium
+Internet irundha, terminal-la:
+python -m pip install selenium
+
+
+Installation mudinjadhum check pannunga:
+python -m pip show selenium
+
+
+Package details vandha Selenium install aagiduchu.
+3. Run your test again
+Unga project folder-la irundhu:
+python selenium/test_login.py
+
+------
+
+Error	Possible reason
+No module named 'selenium'	Selenium package install aagala
+No module named 'webdriver_manager'	Andha package-um install pannanum, if your code imports it
+No module named 'pytest'	Pytest dependency missing, if your test uses it
+Chrome/driver error	Browser or driver setup issue
+For example, webdriver_manager missing-na:
+
+python -m pip install webdriver-manager
+
